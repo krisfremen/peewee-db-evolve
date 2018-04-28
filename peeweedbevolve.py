@@ -230,7 +230,7 @@ class FakeClause(object):
   def __init__(self, *args):
     self.args = args
 
-Clause = Clause if hasattr(pw, 'Clause') else FakeClause
+Clause = pw.Clause if hasattr(pw, 'Clause') else FakeClause
 
 class FakeCompiler(object):
 
